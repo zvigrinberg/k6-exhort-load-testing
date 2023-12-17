@@ -130,19 +130,10 @@ export const options = {
   ]
 };
 
-// export const options = {
-//   iterations: 10,
-//   vus: 10
-// };
 
 
 const payload = open("./sbom-mid.json").toString()
 
-// The function that defines VU logic.
-//
-// See https://grafana.com/docs/k6/latest/examples/get-started-with-k6/ to learn more
-// about authoring k6 scripts.
-//
 export default function() {
   const params = {
     headers: {
